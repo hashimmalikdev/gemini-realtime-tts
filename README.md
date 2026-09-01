@@ -8,6 +8,6 @@
   [![Powered by Gemini](https://img.shields.io/badge/Powered%20By-Google%20Gemini%20API-orange.svg)](https://aistudio.google.com/api-keys)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
+  <img alt="comparison" src="https://github.com/user-attachments/assets/74f534a1-23b3-472d-9023-1572c85a4999" />
 </div>
 
-<img width="800" height="390" alt="comparison" src="https://github.com/user-attachments/assets/74f534a1-23b3-472d-9023-1572c85a4999" />
