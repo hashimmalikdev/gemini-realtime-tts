@@ -1,39 +1,50 @@
 <div align="center">
 
-# Gemini FREE Real-Time Text-To-Speech (TTS)
+# Gemini Free Real-Time Text-to-Speech
 
-**Free real-time Text-to-Speech with Google Gemini API** — low-latency streaming TTS in Python with voice control, translation, custom speaking style, and AI summarization.
+**Free real-time streaming TTS powered by Google Gemini**
+
+Low latency • 30+ voices • Language control • Custom speaking style • AI summarization
 
 [![Demo Video](https://img.youtube.com/vi/_vlilHILGPk/maxresdefault.jpg)](https://www.youtube.com/watch?v=_vlilHILGPk)
 
-[![Python Version](https://img.shields.io/badge/Python-3.12.10%20(Recommended)-blue.svg)](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe)
+[![Python](https://img.shields.io/badge/Python-3.12.10%20(Recommended)-blue.svg)](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe)
 [![Powered by Gemini](https://img.shields.io/badge/Powered%20By-Google%20Gemini%20API-orange.svg)](https://aistudio.google.com/api-keys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-<img alt="comparison" src="https://github.com/user-attachments/assets/74f534a1-23b3-472d-9023-1572c85a4999"/>
+<img alt="Gemini Free Real-Time TTS" src="https://github.com/user-attachments/assets/74f534a1-23b3-472d-9023-1572c85a4999" width="780"/>
 
 </div>
 
 ---
 
-## Features
+### Why this exists
 
-- **Completely Free** – Works on Gemini free tier
-- **Real-time Streaming** – Low latency audio
-- **30+ Voices** – Choose any Gemini voice
-- **Language & Accent Control** – Speak in any language
-- **Custom Speaking Style** – Control tone, speed & personality
-- **AI Summarization** – Shortens long text before speaking
-- **Save Audio** – Export as `.wav`
-- **Simple API** – Just a few lines of code
+Most free TTS options are either slow, limited, or complicated to set up.  
+This project gives you **real-time streaming speech** using Google Gemini — completely free on the free tier.
+
+Just a few lines of code and you can start speaking.
 
 ---
 
-## Installation
+### Features
+
+- Completely free (Gemini free tier)
+- Real-time streaming with low latency
+- 30+ high-quality voices
+- Speak in any language or accent
+- Control tone, speed, and personality
+- Optional AI summarization for long text
+- Save output as `.wav`
+- Extremely simple API
+
+---
+
+### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/YOUR_USERNAME/gemini-realtime-tts.git
+cd gemini-realtime-tts
 pip install -r requirements.txt
 ```
 
@@ -43,11 +54,11 @@ Create a `.env` file:
 GEMINI_API_KEY=your_api_key_here
 ```
 
-Get free API key → [Google AI Studio](https://aistudio.google.com/api-keys)
+Get a free API key here → [Google AI Studio](https://aistudio.google.com/api-keys)
 
 ---
 
-## Quick Start & Usage
+### Quick Start
 
 ```python
 from gemini_tts import GeminiTTS
@@ -67,11 +78,12 @@ while True:
     tts.text(text)
 ```
 
-> **Important:** Always create `GeminiTTS` **outside** the loop and reuse the same instance. Creating a new object inside the loop will open multiple websockets and can cause Gemini errors.
+> **Important:** Always create the `GeminiTTS` object **outside** the loop.  
+> Creating it inside the loop opens multiple connections and can cause errors.
 
 ---
 
-## Available Voices
+### Available Voices
 
 | Voice | Pitch | Style | Best For |
 |-------|-------|-------|----------|
@@ -108,43 +120,36 @@ while True:
 
 ---
 
-## Parameters
+### Parameters
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `voice_name` | str | `"Zephyr"` | Voice name |
-| `target_lang` | str | `None` | Target language/accent |
-| `summarize` | bool | `False` | Summarize before speaking |
-| `system_instruction` | str | `None` | Speaking style & tone |
-| `output_path` | str | `None` | Save as `.wav` |
+| `target_lang` | str | `None` | Target language or accent |
+| `summarize` | bool | `False` | Summarize text before speaking |
+| `system_instruction` | str | `None` | Speaking style, tone, and speed |
+| `output_path` | str | `None` | Path to save `.wav` file |
 
 ---
 
-## Why This Project?
-
-All complex TTS logic is already inside `gemini_tts.py`.  
-You just import and use it — perfect for productivity.
-
----
-
-## FAQ
+### FAQ
 
 **Is it free?**  
-Yes, works with Gemini free tier.
+Yes, it works on the Gemini free tier.
 
-**Can I change voice & language?**  
-Yes — use `voice_name` and `target_lang`.
+**Can I change the voice and language?**  
+Yes. Use `voice_name` and `target_lang`.
 
 **Can I control how it speaks?**  
-Yes — use `system_instruction`.
+Yes. Use `system_instruction`.
 
-**Why create object only once?**  
-Creating new objects inside the loop opens multiple websockets and can cause Gemini errors.
+**Why create the object only once?**  
+Creating a new instance every time opens multiple WebSocket connections and can cause Gemini errors.
 
 ---
 
-## License
+### License
 
 MIT License
 
-**YouTube Tutorial:** [Watch Demo](https://www.youtube.com/watch?v=_vlilHILGPk)
+**Demo:** [Watch on YouTube](https://www.youtube.com/watch?v=_vlilHILGPk)
