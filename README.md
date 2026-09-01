@@ -43,7 +43,7 @@ Just a few lines of code and you can start speaking.
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gemini-realtime-tts.git
+gh repo clone hashimmalikdev/gemini-realtime-tts
 cd gemini-realtime-tts
 pip install -r requirements.txt
 ```
