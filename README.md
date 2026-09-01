@@ -1,2 +1,13 @@
-# gemini-realtime-tts
-Real-time Python Text-to-Speech (TTS) engine &amp; AI Voice Generator powered by Google Gemini Live API. Low-latency WebSocket audio streaming, unlimited RPD, prompt voice control, auto-summarization &amp; translation.
+<div align="center">
+
+  # 🔊 Gemini FREE Real-Time Text-To-Speech (TTS)
+
+  [![🎥 Demo Video](https://img.youtube.com/vi/_vlilHILGPk/maxresdefault.jpg)](https://www.youtube.com/watch?v=_vlilHILGPk)
+
+  [![Python Version](https://img.shields.io/badge/Python-3.12.10%20(Recommended)-blue.svg)](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe)
+  [![Powered by Gemini](https://img.shields.io/badge/Powered%20By-Google%20Gemini%20API-orange.svg)](https://aistudio.google.com/api-keys)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+</div>
+
+![Architecture Comparison](./comparison.svg)
